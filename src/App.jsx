@@ -1,4 +1,5 @@
-
+import React, {useState} from 'react';
+// import { useEffect } from 'react';
 import './App.css'
 import BackColour from './components/colour'
 
@@ -71,16 +72,18 @@ function App() {
       ]
     }
   ];
-  
+
+  localStorage.setItem("name", fruit[1]);
+  localStorage.setItem("Name", cat.Name);
+  localStorage.setItem("David", people[0].friends[0].hobbies[1].difficulty);
+
 
   return (
-    <>
-   
+    <> 
       {fruit.map((fruit, index) => (
         <BackColour id = {fruit} key = {index}/>
       ))}
   
-
       <div>
         <p>{cat.favouriteFood[2]}</p>
       </div>
@@ -88,6 +91,29 @@ function App() {
       <div style={{backgroundColor:"orange"}}>
       <p>{people[1].friends[0].hobbies[1].difficulty}</p>
       </div>
+
+      <p>{localStorage.getItem("name")}</p>
+      <p>{localStorage.getItem("Name")}</p>
+      <p>{localStorage.getItem("David")}</p>
+
+
+        {/* <p value={Surname}
+            onChange={(e) => setSurname(e.target.value)}></p>
+
+         <input
+            placeholder="Surname"
+            value={name}
+            onChange={(e) => setSurname(e.target.value)}/>
+
+        <div>
+            <button onClick={handle}>Done</button>
+         </div>
+
+         {localStorage.getItem('Surname') && (
+            <div>
+               Surname: <p>{localStorage.getItem('Surname')}</p>
+            </div>
+         )} */}
     </>
 
   )
