@@ -1,6 +1,7 @@
 import Div from './componets/divColor';
 import './App.css'
 import David from './david';
+import { useEffect, useState } from 'react';
 
 function App() {
               // number
@@ -79,6 +80,7 @@ function App() {
       }
     ];
 
+              localStorage.setItem("snake", JSON.stringify(snake.type));
 
 
   return (
@@ -114,7 +116,11 @@ function App() {
        <div style={{backgroundColor:"orange",color:"blue", borderRadius:"10px"}}>
            {people[1].friends[0].hobbies[1].difficulty}
        </div>
-      
+
+        
+
+
+          <p>{localStorage.getItem("snake")}</p>
     </>
   )
 }
