@@ -2,32 +2,98 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import List from './components/list'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
+  let number = 9;
+  number =4
+
+  let myName = "Luyanda";
+
+   //let isPaid = no
+  
+   
+  
+
+   let animal = {animaType:"Cat", color :"Grey and Black", age:2, eyeColor:"blue",isHungry: true, list:['Monday','Tuesday','Wednesday','Thursday','Friday']};
+   
+    let fruits = ['Banana', 'Apple', 'Pear','Orange', 'Nantchie']
+
+    fruits.push('Pineapple', 'SweetBerry')
+    
+    console.log(animal.list[2]);
+    const people = [
+      {
+        id: 1,
+        name: "Alice",
+        age: 30,
+        friends: [
+          {
+            id: 2,
+            name: "Bob",
+            age: 25,
+            hobbies: [
+              { id: 1, name: "Reading", difficulty: "Medium" },
+              { id: 2, name: "Hiking", difficulty: "Hard" }
+            ]
+          },
+          {
+            id: 3,
+            name: "Charlie",
+            age: 35,
+            hobbies: [
+              { id: 3, name: "Gaming", difficulty: "Easy" },
+              { id: 4, name: "Cooking", difficulty: "Medium" }
+            ]
+          }
+        ]
+      },
+      {
+        id: 4,
+        name: "David",
+        age: 40,
+        friends: [
+          {
+            id: 5,
+            name: "Eve",
+            age: 28,
+            hobbies: [
+              { id: 5, name: "Swimming", difficulty: "Hard" },
+              { id: 6, name: "Cycling", difficulty: "Medium" }
+            ]
+          }
+        ]
+      }
+    ];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
   return (
+    
+    
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    {fruits.map((fruits,index) => (
+      <List name={fruits} key={index}/>
+    ))}
+    <p>{animal.list[2]}</p>
+    <div style={{backgroundColor:"orange"}}>
+      <p>
+        {people[1].friends[0].hobbies[1].difficulty}
       </p>
+    </div>
+    <p>{people}</p>
+
     </>
   )
 }
