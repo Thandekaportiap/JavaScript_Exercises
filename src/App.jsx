@@ -3,16 +3,18 @@ import './App.css'
 import David from './david';
 
 function App() {
+              // number
   let pmbCode = 3201;
         pmbCode = 1;
         console.log(pmbCode);
-
+              // String
   let gee = "Jack";
           console.log(gee);
-
+              // boolean
   let ispayDay= true;
           console.log(ispayDay);
 
+              // Objects
   let snake = { name:"Vipper",
                 type:"non-venomerousSnake",
                 color:"green",
@@ -25,13 +27,13 @@ function App() {
               };
                 console.log(snake);
 
+              // List
   let fruitNames = ["Apple","Banana","Coconut","Orange","Mango"]
                 fruitNames.push("Guava","Grappes")
                 console.log(fruitNames)
 
-    let fruit = {id:"Apple", color:"redApple"}
 
-
+              // objects inside arrays and arrays inside of objects
     const people = [
       {
         id: 1,
@@ -87,7 +89,7 @@ function App() {
         {/* string data type */}
         <h1 >{gee} <br /></h1>
 
-        {/* below i was removing last item on the fruitNames List */}
+        {/*removing last item on the fruitNames List */}
         {/* {fruitNames.pop()} */}
 
           {/* mapping through the list of fruits */}
