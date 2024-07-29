@@ -87,7 +87,15 @@ return sum
  return product;
   }
 
-  
+  const text = (color, color1) => {
+    return <p style={{backgroundColor: color, color:color1}}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       Morbi ullamcorper semper tellus, nec suscipit mi imperdiet at. 
+       Morbi sollicitudin orci quis cursus accumsan. Nam at urna mi. 
+       Vivamus id lectus eget velit auctor luctus at in quam. Sed eget lectus ultrices, pretium tellus ut, imperdiet tortor. Aliquam elementum luctus posuere. Curabitur feugiat nisi nec nisi pellentesque vestibulum.
+       Fusce ut diam at enim aliquam pellentesque.
+    </p>
+  }
 
   return(
     <>
@@ -107,9 +115,13 @@ return sum
     <p> {localData}</p>
    </div>
    <div>
-    <p>This is the difference of two numbers{subtraction(8, 14)}</p>
+    <p>This is the difference of two numbers  {subtraction(8, 14)}</p>
     <p>This is the sum of two numbers {addition(8, 12)}</p>
     <p>This is the product of three numbers {multiplication(3, 6, 9)}</p>
+    <div>{text("aqua")}</div>
+    <div>{text("orange")}</div>
+    <div>{text("violet")}</div>
+    <div>{text("yellow", "purple")}</div>
    </div>
     </>
   )
