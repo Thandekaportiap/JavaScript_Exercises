@@ -69,21 +69,37 @@ function App() {
     ];
     
     
+    let num1 = 50;
+    let num2 = 19;
+   function subration(num1,num2){
+      let sum = num1 - num2
+      console.log("the subration of num1 and num2",sum)
+      return sum
+    }
+    subration(num1,num2)
     
+    // let sum1 = 20;
+    // let sum2 = 5;
+    function addition(num1,num2){
+      let add = num1 + num2
+      console.log("adding sum1 and sum2" ,add)
+      return add
+    }
     
-    
-    
-    
-    
-    
-    
+    let num3 =10
+    function multiplication(num1, num2, num3){
+      let mult = num1 * num2 * num3
+      return mult
+      console.log("multiplication of 3 product",mult)
+    }
+    multiplication()
     
 
   return (
     
     
     <>
-    {fruits.map((fruits,index) => (
+    {/* {fruits.map((fruits,index) => (
       <List name={fruits} key={index}/>
     ))}
     <p>{animal.list[2]}</p>
@@ -92,8 +108,16 @@ function App() {
         {people[1].friends[0].hobbies[1].difficulty}
       </p>
     </div>
-    <p>{people}</p>
-
+    <p>{people}</p> */}
+<h1>
+  {subration(num1,num2)}
+  </h1>
+  <p>
+    {addition(num1,num2)}
+  </p>
+  <p>
+    {multiplication(num1,num2,num3)}
+  </p>
     </>
   )
 }
