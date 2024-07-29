@@ -79,7 +79,7 @@ function App() {
         ]
       }
     ];
-
+                        {/* putting an object in the local storage  */}
               localStorage.setItem("snake", JSON.stringify(snake.type));
 
 
@@ -119,7 +119,7 @@ function App() {
 
         
 
-
+          {/*pulling the object from the local storage and display it on the p-tag */}
           <p>{localStorage.getItem("snake")}</p>
     </>
   )
