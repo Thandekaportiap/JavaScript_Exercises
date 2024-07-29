@@ -105,7 +105,7 @@ function App() {
   function multiplication (num1, num2){
     num1 = 10;
     num2 = 2; 
-    
+
     return(
       10 * 2
     )
@@ -119,6 +119,12 @@ function App() {
       num1 / num2
     )
   };
+
+  function bgroungColour(colour,text){
+    return(
+      <p style={{backgroundColor:colour, color:text}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla urna, aliquam tristique gravida quis, suscipit a est. Praesent imperdiet lacus arcu, in rhoncus arcu pretium vel. Maecenas luctus, ex a dapibus commodo, nulla enim pellentesque urna, et ultricies ex purus ut massa. Phasellus vitae urna sit amet felis tempus mollis. Nam et porttitor enim. Cras gravida, nulla et rutrum lobortis, ligula nisi faucibus massa, sed tempus turpis erat nec mauris. Donec hendrerit, dui at dapibus interdum, urna quam iaculis diam, in semper enim elit a augue. Fusce a nulla eu augue gravida bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultrices purus a dignissim rhoncus. Nullam semper orci et orci pellentesque tincidunt. Sed quis gravida neque.</p>
+    )
+  }
 
   return (
     <> 
@@ -143,6 +149,9 @@ function App() {
       <h1>This is a sum of two numbers: {addition(num1, num2)}</h1>
       <h1>This is a multiplication of two numbers: {multiplication()}</h1>
       <h1>This is a quotient of two numbers: {division(100,20)}</h1>
+      {bgroungColour("grey", "white")}
+      {bgroungColour("violet", "nayve")}
+      {bgroungColour("yellow", "purple")}
     </>
 
   )
