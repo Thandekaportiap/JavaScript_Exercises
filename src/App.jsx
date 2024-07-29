@@ -77,11 +77,12 @@ function App() {
   localStorage.setItem("Name", cat.Name);
   localStorage.setItem("David", people[0].friends[0].hobbies[1].difficulty);
 
+  
   let num1 = 20;
   let num2 = 30
 
+// Subtraction
   let sub = subtraction(num1, num2)
-
   function subtraction(num1, num2){
 
     return(
@@ -89,13 +90,35 @@ function App() {
     )
   };
 
+
+  // Addition
   function addition (num1, num2){
     
     return(
       num1 + num2
     )
   };
-  addition(num1, num2)
+  addition(num1, num2);
+
+
+  // Multiplication
+  function multiplication (num1, num2){
+    num1 = 10;
+    num2 = 2; 
+    
+    return(
+      10 * 2
+    )
+  };
+
+
+  // Division
+  function division (num1, num2){
+    
+    return(
+      num1 / num2
+    )
+  };
 
   return (
     <> 
@@ -118,6 +141,8 @@ function App() {
 
       <h1>This is a difference of two numbers: {sub}</h1>
       <h1>This is a sum of two numbers: {addition(num1, num2)}</h1>
+      <h1>This is a multiplication of two numbers: {multiplication()}</h1>
+      <h1>This is a quotient of two numbers: {division(100,20)}</h1>
     </>
 
   )
