@@ -68,6 +68,10 @@ function App() {
       }
     ];
     
+    let now = 7;
+    if(now !=5){
+      alert("The variable now is"+ " "+ now)
+    }
     
     let num1 = 50;
     let num2 = 19;
