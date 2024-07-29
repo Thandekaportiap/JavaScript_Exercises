@@ -110,7 +110,7 @@ function App() {
     <h1>The difference between two numbers is:{(subraction(233, 17))}</h1>
     <h1>This is the output/return of  a non numeric fuctionis :{nonNumericFunction()}</h1>
     <p>The sum between two numbers is:{(addition(233,17))}</p>
-    <p>The product of three numvers is: {multiplication(16,32,3)}</p>
+    <p>The product of three numbers is: {multiplication(16,32,3)}</p>
     </>
   )
 }
