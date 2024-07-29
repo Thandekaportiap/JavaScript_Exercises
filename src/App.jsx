@@ -20,10 +20,10 @@ function App() {
    let animal = {animaType:"Cat", color :"Grey and Black", age:2, eyeColor:"blue",isHungry: true, list:['Monday','Tuesday','Wednesday','Thursday','Friday']};
    
     let fruits = ['Banana', 'Apple', 'Pear','Orange', 'Nantchie']
+    localStorage.setItem("fruitsList",fruits[2])
+
 
     fruits.push('Pineapple', 'SweetBerry')
-    
-    console.log(animal.list[2]);
     const people = [
       {
         id: 1,
@@ -68,16 +68,26 @@ function App() {
       }
     ];
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    function subraction(firstNumber,secondNumber){
+
+      let SubtractNumbers = secondNumber - firstNumber;
+      return(
+        SubtractNumbers
+      )}
+      function nonNumericFunction(){
+        let something = "bla dah whatever"
+        return something
+      }
+
+      function addition(firstNumber,secondNumber){
+
+        let addNumbers = secondNumber + firstNumber;
+        return(
+          addNumbers
+        )}
+        function multiplication(numOne,NumTwo,numThree){
+        return numOne* NumTwo * numThree 
+        }
 
   return (
     
@@ -92,10 +102,22 @@ function App() {
         {people[1].friends[0].hobbies[1].difficulty}
       </p>
     </div>
-    <p>{people}</p>
-
+    <div>
+      <p>
+      {localStorage.getItem("fruitsList")}
+      </p>
+    </div>
+    <h1>The difference between two numbers is:{(subraction(233, 17))}</h1>
+    <h1>This is the output/return of  a non numeric fuctionis :{nonNumericFunction()}</h1>
+    <p>The sum between two numbers is:{(addition(233,17))}</p>
+    <p>The product of three numvers is: {multiplication(16,32,3)}</p>
     </>
   )
 }
 
+
+
+
 export default App
+
+
