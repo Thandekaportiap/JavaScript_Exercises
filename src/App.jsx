@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import List from './components/bgcolour'
+import Difficulty from './components/difficulty'
 
 
 function App() {
@@ -69,8 +70,11 @@ function App() {
     ];
     
     let now = 7;
-    if(now !=5){
+    if(now ==5){
       alert("The variable now is"+ " "+ now)
+    }
+    else{
+      alert("The condition for the if was not met")
     }
     
     let num1 = 50;
@@ -140,6 +144,8 @@ paragraph()
   </p>
   {paragraph("pink","green")}
   {paragraph("yellow","purple")}
+ 
+ <Difficulty/>
     </>
   )
 }
