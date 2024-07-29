@@ -90,6 +90,15 @@ function App() {
     return numberA-numberB;
   }
 
+  //Below is a declaration/definition/creation of the nameOfFunction function
+  function nameOfFunction(){
+    let something = "blah blah blah"
+    return something;
+  }
+  
+  // below is the call/invocation for the nameOfFunction function
+  nameOfFunction();
+
   num1 = 55;
   num1 = 89;
 
@@ -97,9 +106,15 @@ function App() {
 
   //localStorage.setItem('user', JSON.stringify(userObj))
 
+  function multiplication(numberA,numberB,numberC){
+    return numberA * numberB * numberC;
+  }
+
   return (<>
-  <h1>{addition(num1,num2)}</h1>
-  <p>{subtraction(num1,num2)}</p>
+  <h1>This is the sum of 2 numbers: {addition(num1,num2)}</h1>
+  <h2>This is the output/return of a silly function: {nameOfFunction()}</h2>
+  <p>This is the subtraction of 2 numbers: {subtraction(num1,num2)}</p>
+  <p>This is the product of 3 numbers: {multiplication(5,6,3)}</p>
   </>);
 }
 
