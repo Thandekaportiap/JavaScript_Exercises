@@ -86,6 +86,10 @@ function App() {
     console.log("I am running because the program didnt crash")
   }
 
+  function subtraction(numberA,numberB){
+    return numberA-numberB;
+  }
+
   num1 = 55;
   num1 = 89;
 
@@ -95,6 +99,7 @@ function App() {
 
   return (<>
   <h1>{addition(num1,num2)}</h1>
+  <p>{subtraction(num1,num2)}</p>
   </>);
 }
 
