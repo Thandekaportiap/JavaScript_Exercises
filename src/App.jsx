@@ -119,6 +119,12 @@ function App() {
     </p>
   }
 
+  let wack = 10
+
+  if(wack == 5){
+    alert("His hair wack, his gear wack, his footstance wack, the way that he talks wack!")
+  }
+
   return (
     <>
       {/* {fruits.map((items, index) => (
