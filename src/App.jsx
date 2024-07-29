@@ -33,7 +33,7 @@ function App() {
 
               // List
   let fruitNames = ["Apple","Banana","Coconut","Orange","Mango"]
-                fruitNames.push("Guava","Grappes")
+                fruitNames.push("Guava","Grapes")
                 console.log(fruitNames);
 
 
@@ -60,7 +60,7 @@ function App() {
           }
 
           {/* Accessing the 3rd item on the list of my animal foodtype */}
-          <ArraysnObjects/>
+          <Thirditem/>
 
          {/* <Div fruits={fruitNames}/> */}
 
