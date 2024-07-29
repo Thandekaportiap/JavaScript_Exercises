@@ -1,5 +1,6 @@
 import React from "react";
 import NewComp from "./component/newComp"
+import Difficulty from "./component/difficulty"
 
 const App = ()  => {
 
@@ -98,10 +99,15 @@ return sum
   }
 
   let sunnySide = 21;
-  if(sunnySide !== 5){
-    alert("The name of the variable is sunnySide and it has " + sunnySide +" inside")
-  }
+  // if(sunnySide == 5){
+  //   alert("The name of the variable is sunnySide and it has " + sunnySide +" inside")
+  // }
+  // else {
+  //   alert("the condition for the if statement was not met")
+  // }
 
+  // let level = ["easy", "medium", "hard"]
+  let level = "easy";
 
   return(
     <>
@@ -129,6 +135,7 @@ return sum
     <div>{text("violet")}</div>
     <div>{text("yellow", "purple")}</div>
    </div>
+   <div>< Difficulty  level={level}/></div>
     </>
   )
 }
