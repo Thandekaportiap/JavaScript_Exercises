@@ -121,8 +121,8 @@ function App() {
 
   let wack = 10
 
-  if(wack == 5){
-    alert("His hair wack, his gear wack, his footstance wack, the way that he talks wack!")
+  if(wack != 5){
+    alert("This variable is wack.The variable has the value" + wack)
   }
 
   return (
