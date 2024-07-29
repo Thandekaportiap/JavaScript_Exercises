@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import List from './components/list'
+import List from './components/bgcolour'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   let number = 9;
   number =4
 
-  let myName = "Luyanda";
+  let hope = "fresh";
 
    //let isPaid = no
   

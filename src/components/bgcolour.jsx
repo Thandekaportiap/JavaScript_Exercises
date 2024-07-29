@@ -1,4 +1,4 @@
-function List({name}){
+function Backgroud({name}){
   
   
  
@@ -17,4 +17,4 @@ function List({name}){
  
     
 
-export default List
+export default Backgroud
