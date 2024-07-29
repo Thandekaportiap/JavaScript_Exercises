@@ -98,7 +98,7 @@ return sum
   }
 
   let sunnySide = 21;
-  if(sunnySide == 5){
+  if(sunnySide !== 5){
     alert("The name of the variable is sunnySide and it has " + sunnySide +" inside")
   }
 
