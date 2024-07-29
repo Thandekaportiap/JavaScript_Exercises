@@ -3,6 +3,8 @@ import Practice from './components/practice';
 
 function APP(){
 
+ 
+
 
 
 let num1 =10;
@@ -94,8 +96,8 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
   fruits.push("oranges")
 
 
-  function para(bc,blue){
-    return <p style={{backgroundColor:bc,color:blue}}>Lorem ipsum dolor sit amet,
+  function para(bc,purple){
+    return <p style={{backgroundColor:bc,color:purple}}>Lorem ipsum dolor sit amet,
      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -113,14 +115,28 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
   }
   myNameis();
 
+
+
+  let isAge = 20;
+  
+  if(isAge != 5){
+
+    alert("The value of Age is "+ isAge)
+  }
+
+
+
+
   return(
     <>
 <h1>Hi my name is :{myNameis()}</h1>
 <h2>This is the difference between two numbers :{subtraction(num1, num2)}</h2>
 <p>This is the product of two numbers :{multiplication(num1, num2)}</p>
 <p>This is the sum of two numbers :{addition(num1, num2)}</p>
-{para("yellowgreen","blue")}
+{para("yellow","purple")}
 {para("red")}
+
+
 
 
     {fruits.map((fruit, index)=>(
