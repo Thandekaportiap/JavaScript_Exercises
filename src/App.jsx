@@ -93,6 +93,20 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
   fruits.push("strawberry")
   fruits.push("oranges")
 
+
+  function para(bc,blue){
+    return <p style={{backgroundColor:bc,color:blue}}>Lorem ipsum dolor sit amet,
+     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillu
+      m dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  }
+
+
+
   function myNameis(){
     let name = "Asanda"
     return name
@@ -105,6 +119,9 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
 <h2>This is the difference between two numbers :{subtraction(num1, num2)}</h2>
 <p>This is the product of two numbers :{multiplication(num1, num2)}</p>
 <p>This is the sum of two numbers :{addition(num1, num2)}</p>
+{para("yellowgreen","blue")}
+{para("red")}
+
 
     {fruits.map((fruit, index)=>(
       <Practice name={fruit} key ={index}/>
