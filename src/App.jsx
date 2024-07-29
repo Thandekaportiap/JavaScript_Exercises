@@ -82,6 +82,11 @@ let sum = number1 + number;
 return sum
   }
 
+  const multiplication  = (num1, num2, num3) => {
+ let product = num1 * num2 * num3;
+ return product;
+  }
+
   
 
   return(
@@ -102,8 +107,9 @@ return sum
     <p> {localData}</p>
    </div>
    <div>
-    <h1>{subtraction(8, 14)}</h1>
-    <p>{addition(8, 12)}</p>
+    <p>This is the difference of two numbers{subtraction(8, 14)}</p>
+    <p>This is the sum of two numbers {addition(8, 12)}</p>
+    <p>This is the product of three numbers {multiplication(3, 6, 9)}</p>
    </div>
     </>
   )
