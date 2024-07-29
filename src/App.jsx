@@ -121,8 +121,11 @@ function App() {
 
   let wack = 10
 
-  if(wack != 5){
+  if(wack == 5){
     alert("This variable is wack.The variable has the value" + wack)
+  }
+  else{
+    alert("The condition for the if was not met.")
   }
 
   return (
