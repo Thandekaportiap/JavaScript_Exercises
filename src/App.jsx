@@ -2,11 +2,32 @@ import React from 'react'
 import Practice from './components/practice';
 
 function APP(){
-  
- function subtraction(){
 
- }
+
+
+let num1 =10;
+let num2 =12;
+
+function addition(num1, num2){
+  return num1 + num2 ;
+}
+console.log(addition(num1,num2))
+
+
+
+
+  function subtraction(num1, num2) {
+   return num2 - num1
+  }
+
+  console.log (subtraction(num1, num2))
   
+ function multiplication(num1,num2){
+  return num1*num2
+ }
+
+
+
 
   const people = [
     {
@@ -72,8 +93,19 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
   fruits.push("strawberry")
   fruits.push("oranges")
 
+  function myNameis(){
+    let name = "Asanda"
+    return name
+  }
+  myNameis();
+
   return(
     <>
+<h1>Hi my name is :{myNameis()}</h1>
+<h2>This is the difference between two numbers :{subtraction(num1, num2)}</h2>
+<p>This is the product of two numbers :{multiplication(num1, num2)}</p>
+<p>This is the sum of two numbers :{addition(num1, num2)}</p>
+
     {fruits.map((fruit, index)=>(
       <Practice name={fruit} key ={index}/>
     ))}
