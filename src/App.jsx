@@ -72,9 +72,14 @@ const App = ()  => {
     }
   ];
   
-  const subtractin = (num1, num2) => {
+  const subtraction  = (num1, num2) => {
 let difference = num2 - num1;
 return difference;
+  }
+
+  const addition = (number, number1) => {
+let sum = number1 + number;
+return sum
   }
 
   
@@ -97,7 +102,8 @@ return difference;
     <p> {localData}</p>
    </div>
    <div>
-    <h1>{subtractin(8, 10)}</h1>
+    <h1>{subtraction(8, 14)}</h1>
+    <p>{addition(8, 12)}</p>
    </div>
     </>
   )
