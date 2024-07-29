@@ -56,11 +56,46 @@ function App() {
     },
   ];
 
-  klet 
+  let num1 = 45;
+  let num2 = 10;
+  
+  console.log("The addition between num1 and num2 is: ",(num1+num2))
 
-  localStorage.setItem('user', JSON.stringify(userObj))
+  num1 = 1982;
+  num2 = 46;
 
-  return <></>;
+  console.log("The addition between num1 and num2 is: ",(num1+num2))
+
+  num1 = 32988392;
+  num2 = 36;
+
+  console.log("The addition between num1 and num2 is: ",(num1+num2))
+
+  function addition(numberA, numberB){
+
+    try
+    {
+    let addNumbers = numberA+numberB;
+    console.log("The addition between num1 and num2 is: ",addNumbers)
+    return addNumbers;
+    }
+    catch(error)
+    {
+      console.log(error)
+    }
+    console.log("I am running because the program didnt crash")
+  }
+
+  num1 = 55;
+  num1 = 89;
+
+  addition(num1,num2);
+
+  //localStorage.setItem('user', JSON.stringify(userObj))
+
+  return (<>
+  <h1>{addition(num1,num2)}</h1>
+  </>);
 }
 
 export default App;
