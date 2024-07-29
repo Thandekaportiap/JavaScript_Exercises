@@ -79,9 +79,9 @@ function Para(color,text){
      
 }
 
-let Whatever = 6;
-if (Whatever == 5){
-  alert("The number is the number")
+let Six = 6;
+if (Six != 5){
+  alert("The name of the variable is Six and it is Assigned to nu. "+ Six)
 }
   return (
     <>
