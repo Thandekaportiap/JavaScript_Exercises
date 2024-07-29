@@ -21,7 +21,7 @@ const App = ()  => {
   fruits.push("lemon")
   fruits.push("pear")
  
-  localStorage.setItem("fruits", JSON.stringify(fruits))
+  localStorage.setItem("fruits", JSON.stringify(fruits[2]))
   const localData = localStorage.getItem("fruits");
 
 
@@ -72,7 +72,11 @@ const App = ()  => {
     }
   ];
   
-  
+  const subtractin = (num1, num2) => {
+let difference = num2 - num1;
+return difference;
+  }
+
   
 
   return(
@@ -91,6 +95,9 @@ const App = ()  => {
   </div>
    <div>
     <p> {localData}</p>
+   </div>
+   <div>
+    <h1>{subtractin(8, 10)}</h1>
    </div>
     </>
   )
