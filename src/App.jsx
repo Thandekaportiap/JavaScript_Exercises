@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import List from './components/list'
-
+import DifficultyLevel from './components/DifficultyLevel'
 
 function App() {
  
@@ -102,7 +102,21 @@ function App() {
         {
           alert("The first condition was not met")
         }
+       
 
+        
+        const DifficultyLevel = ({ level }) => {
+          let difficultyColor;
+        
+          if (level === "Easy") {
+            difficultyColor = "gree";
+          } 
+          else if (level === "Medium") {
+            difficultyColor = "orange";
+          }  
+          else {
+            difficultyColor = "red"; 
+          }
 
   return (
     
@@ -130,6 +144,13 @@ function App() {
     {lorumParagragh("yellow","purple")}
     {lorumParagragh("purple")}
     alertThe number {myNumber} is not 5;
+
+    <div>
+      <DifficultyLevel level="Easy" style={{backgroundColor:"green"}}/>
+      <DifficultyLevel level="Medium"style={{backgroundColor:"orange"}} />
+      <DifficultyLevel level="Hard" style={{backgroundColor:"red"}}/>
+   
+    </div>
     
     </>
   )
@@ -137,7 +158,7 @@ function App() {
 
 
 
-
+}
 export default App
 
 

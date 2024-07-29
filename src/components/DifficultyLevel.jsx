@@ -1,4 +1,4 @@
-function DifficultyLevel({name}){
+function DifficultyLevel({level}){
   
   
  
@@ -7,6 +7,7 @@ function DifficultyLevel({name}){
         
     
         <>
+        
       
        
       
