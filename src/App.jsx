@@ -61,6 +61,22 @@ function multiplication(num1, num2){
   return(num2*num1)
 }
 multiplication(num1, num2)
+
+function Para(color,text){
+      return <div style={{backgroundColor:color,color:text}}> 
+        <p>
+          Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit. 
+          Mauris venenatis nulla sit amet metus tristique tincidunt.
+          Nullam fermentum, lectus non aliquet ornare, justo enim tempus arcu,
+          faucibus semper risus mauris vitae est. Praesent aliquam consectetur enim,
+          sed iaculis mi. Vivamus quis congue neque. Fusce venenatis iaculis eros. 
+          Quisque ornare arcu ligula. Nulla eget nunc sed neque semper hendrerit. 
+          Aenean non est turpis. Nullam pulvinar urna ut velit eleifend fermentum.
+          Suspendisse eleifend gravida tempor.
+        </p>
+      </div> 
+}
   return (
     <>
    
@@ -93,9 +109,14 @@ multiplication(num1, num2)
           <LocalStrge  />
 
           {/* <Minus/> */}
-        <h1>This is  addition : {addition(num1, num2)}</h1>
-        <h2> This is the subtraction: {subtraction(num1, num2)}</h2>
-        <h3> This is the product of 3 numbers : {multiplication(num1, num2,2)}</h3>
+           
+            <h1>This is  addition : {addition(num1, num2)}</h1>
+            <h2> This is the subtraction: {subtraction(num1, num2)}</h2>
+            <h3> This is the product of 3 numbers : {multiplication(num1, num2,2)}</h3>
+            
+        {Para("grey","white")}
+        {Para("orange","black")}
+        {Para("yellow","purple")}
     </>
   )
 }

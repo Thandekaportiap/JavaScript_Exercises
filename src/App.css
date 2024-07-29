@@ -47,3 +47,8 @@ button {
 .item {
   margin: 1rem;
 } */
+body{
+  height: 100vh;
+  align-items: center;
+  
+}
