@@ -94,6 +94,22 @@ function App() {
     }
     multiplication()
     
+function paragraph(pink, green){
+  return(
+  <p   style={{backgroundColor:pink, color:green}}>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas et urna quis faucibus.
+     Sed dignissim interdum justo, non pellentesque metus commodo vel. Sed condimentum purus a dui fringilla, 
+     consequat facilisis nunc posuere. Curabitur sodales condimentum erat nec faucibus.
+      Pellentesque efficitur nunc id diam consequat euismod. Nunc pretium condimentum dui at tempor.
+       Phasellus eget laoreet nisi. Donec consequat mollis metus, in vulputate ipsum consectetur non. 
+       Duis sed mauris eu ipsum fermentum ultrices quis vitae arcu. Sed volutpat dictum nunc et dapibus.
+        Vestibulum consectetur, quam vel sagittis bibendum, nulla turpis porttitor mi, vitae tristique dui turpis at diam.
+         Donec blandit nulla sit amet nunc tempor blandit.
+  </p>
+  )
+}
+paragraph()
+
 
   return (
     
@@ -109,15 +125,17 @@ function App() {
       </p>
     </div>
     <p>{people}</p> */}
-<h1>
-  {subration(num1,num2)}
+<h1>This is the different of 2 numbers:  {subration(num1,num2)}
+ 
   </h1>
-  <p>
-    {addition(num1,num2)}
+  <p>This is the sum of 2 numbers: {addition(num1,num2)}
+    
   </p>
-  <p>
-    {multiplication(num1,num2,num3)}
+  <p>This is the product of 3 numbers: {multiplication(num1,num2,num3)} 
+    
   </p>
+  {paragraph("pink","green")}
+  {paragraph("yellow","purple")}
     </>
   )
 }
