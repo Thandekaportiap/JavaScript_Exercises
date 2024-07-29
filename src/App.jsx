@@ -116,6 +116,13 @@ function multiplication(num1,num2,num3){
 }
 multiplication()
 ;
+
+function Paragraph(red, green){
+
+  return( <p style={{backgroundColor:red , color:green}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio rhoncus, lobortis lacus bibendum, tempus orci. Quisque nec sem mattis, pretium magna eu, volutpat elit. Duis arcu nibh, vulputate quis erat vel, porttitor luctus ligula. Aliquam erat volutpat. Pellentesque eget felis sem. In id dolor at turpis imperdiet euismod. Phasellus ut nisl vulputate, accumsan magna a, faucibus dolor. Cras vestibulum leo fermentum dui auctor congue. Donec blandit tincidunt felis at egestas.</p>
+)}
+
+;
   return (
     <>
     {/* <div style={{
@@ -141,8 +148,10 @@ multiplication()
 <h1>This is the diffrence of 2 numbers: {Subtraction(num1,num2)}</h1>
 <p>This is the sum of 2 numbers: {Addition(num1,num2)}</p>
 <p>This is the product of 3 numbers: { multiplication(6,6,4)}</p>
+{Paragraph("pink", "white")}
+{Paragraph("yellow", "purple")}
     </>
-   
+
   )
 }
 
