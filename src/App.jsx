@@ -6,6 +6,12 @@ import LocalStrge from './componets/localS';
 import ArraysnObjects from './array&Object';
 import Thirditem from './thirdItem';
 // import Minus from './funcMinus';
+import Easy from './dificulty';
+import Medium from './medium';
+import Hard from './hard';
+import Difficulty from './dificulty';
+
+
 
 function App() {
               // number
@@ -80,9 +86,32 @@ function Para(color,text){
 }
 
 let Six = 6;
-if (Six != 5){
+if (Six == 5){
   alert("The name of the variable is Six and it is Assigned to nu. "+ Six)
+}else{
+  alert("an If statement condition was false" )
 }
+
+
+
+
+
+// if(easy){
+//   <div style={{backgroundColor:"green"}}>
+//         <GrAccessibility size={40} style={{color:"red"}} />
+//         <h1 style={{color:"red"}}>{level[0]}</h1>
+//         </div>
+// }else if(medium){
+//   <div style={{backgroundColor:"orange"}}>
+//   <FaAccessibleIcon size={40} />
+//   <h1>{level[1]}</h1>
+//   </div>
+// }else{
+//   <div style={{backgroundColor:"red"}}>
+//   <FaAmbulance size={40} style={{color:"green"}} />
+//    <h1 style={{color:"green"}}>{level[2]}!!!</h1>
+//   </div>
+// }
   return (
     <>
    
@@ -123,6 +152,9 @@ if (Six != 5){
         {Para("grey","white")}
         {Para("orange","black")}
         {Para("yellow","purple")}
+
+        <Difficulty level={level}/>
+      
     </>
   )
 }
