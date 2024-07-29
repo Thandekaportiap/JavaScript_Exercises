@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import LocalStrge from './componets/localS';
 import ArraysnObjects from './array&Object';
 import Thirditem from './thirdItem';
+// import Minus from './funcMinus';
 
 function App() {
               // number
@@ -42,10 +43,27 @@ function App() {
                         {/* putting an object in the local storage  */}
               localStorage.setItem("snake", JSON.stringify(snake.type));
 
+              let num1= 5;
+               let num2= 10;
+                  // let sum = num2- num1;
 
+
+function addition(num1, num2){
+  return(num1 + num2)
+}
+
+addition(num1, num2)
+function subtraction(){
+  return(num2-num1)
+}
+subtraction(num1, num2)
+function multiplication(num1, num2){
+  return(num2*num1)
+}
+multiplication(num1, num2)
   return (
     <>
-    
+   
         
        
         {/* string data type */}
@@ -73,6 +91,11 @@ function App() {
 
           {/*pulling the object from the local storage and display it on the p-tag */}
           <LocalStrge  />
+
+          {/* <Minus/> */}
+        <h1>This is  addition : {addition(num1, num2)}</h1>
+        <h2> This is the subtraction: {subtraction(num1, num2)}</h2>
+        <h3> This is the product of 3 numbers : {multiplication(num1, num2,2)}</h3>
     </>
   )
 }
