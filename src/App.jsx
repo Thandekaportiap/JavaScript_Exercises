@@ -4,6 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Div from './componenets/div'
 import Div2 from './componenets/div2'
+import { PiWarningDiamondBold } from "react-icons/pi";
+import { PiWarningDiamondDuotone } from "react-icons/pi";
+import { PiWarningDiamondFill } from "react-icons/pi";
+import Difficulty from './componenets/difficulty'
 
 function App() {
   let example = 9
@@ -117,6 +121,8 @@ function App() {
     
     
     </p>
+
+
   }
 
   let wack = 10
@@ -126,6 +132,18 @@ function App() {
   }
   else{
     alert("The condition for the if was not met.")
+  }
+
+  function easy(){
+    <div style={{backgroundColor:lime}}></div>
+  }
+
+  function medium(){
+    <div style={{backgroundColor:orange}}></div>
+  }
+
+  function hard(){
+    <div style={{backgroundColor:red}}></div>
   }
 
   return (
@@ -154,6 +172,10 @@ function App() {
      <p>The sum of two numbers is: {addition(num3, num4)}</p>
      {paragraph("yellow", "purple")}
      {paragraph("grey", "blue")}
+
+
+    <Difficulty>{easy}</Difficulty>
+
     </>
   
   );
