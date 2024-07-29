@@ -76,6 +76,12 @@ function Para(color,text){
           Suspendisse eleifend gravida tempor.
         </p>
       </div> 
+     
+}
+
+let Whatever = 6;
+if (Whatever == 5){
+  alert("The number is the number")
 }
   return (
     <>
