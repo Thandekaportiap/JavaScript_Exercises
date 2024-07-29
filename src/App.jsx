@@ -82,7 +82,16 @@ console.log(people[1]);
 console.log(people[1].name);
 console.log(people[1].friends[0]);
 console.log(people[1].friends[0].hobbies[1].difficulty)
+;
 
+
+let number = 6
+if(number!=5){
+
+alert("The variable number has the value:" + " " + number)
+
+}
+;
 
 let num1 = 70;
 let num2 = 30;
