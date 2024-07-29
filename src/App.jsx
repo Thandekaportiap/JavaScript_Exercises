@@ -126,6 +126,12 @@ function App() {
     )
   }
 
+  let number = 10;
+
+  if(number != !5){
+    alert ("The name of my variable is number and I assigned it = " + number)
+  }
+
   return (
     <> 
       
