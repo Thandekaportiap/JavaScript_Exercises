@@ -105,6 +105,20 @@ function App() {
   let num6 = 200
   let num7 = 2
 
+  function paragraph(yellow, purple){
+    return<p style={{backgroundColor:yellow, color:purple}}>As of my last update in July 2024, Heihachi Mishima’s status in the Tekken series is complex and can vary depending on the game's storyline and updates.
+
+    Heihachi Mishima, a central character in the Tekken series, is known for his intense rivalry with his son, Kazuya Mishima, and his role in the overarching Mishima family saga. His fate has been a subject of significant plot twists throughout the series. In "Tekken 7," Heihachi is depicted as being killed by Kazuya during the climax of the game. The dramatic end scene involves Kazuya throwing Heihachi into a pit of lava, signifying his apparent death.
+    
+    However, the Tekken series is known for its dramatic storytelling, where characters often have complex fates. While Heihachi's death in "Tekken 7" is portrayed as final within that game's narrative, the nature of video game storytelling, particularly in long-running series like Tekken, means that characters sometimes return or have their fates revisited in future installments.
+    
+    If you're interested in the most current developments, checking the latest updates or announcements from Bandai Namco Entertainment regarding future Tekken games would provide the most accurate information.
+    
+    
+    
+    </p>
+  }
+
   return (
     <>
       {/* {fruits.map((items, index) => (
@@ -129,6 +143,8 @@ function App() {
      <h1>The difference of two numbers is:{subtraction(num1, num2)}</h1>
     <h2>The product of three numbers is:{multiply(num5, num6, num7)} </h2>
      <p>The sum of two numbers is: {addition(num3, num4)}</p>
+     {paragraph("yellow", "purple")}
+     {paragraph("grey", "blue")}
     </>
   
   );
