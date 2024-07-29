@@ -91,6 +91,18 @@ function App() {
         function lorumParagragh(color,color2,color3){
           return <div style={{background:color,color:color2,color3}}> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget sodales metus. Suspendisse vitae sem in eros aliquet ullamcorper. Cras ante eros, maximus eu metus accumsan, faucibus tempor turpis. Mauris pellentesque nulla lorem, eu commodo mi aliquet vitae. Nullam eros quam, ultrices nec mollis id, faucibus in nisi. Nam interdum orci nibh, eget porta metus ornare eu. Integer in turpis et enim consequat dapibus. Etiam fermentum eros a mauris congue eleifend."</div>
         }
+        
+        
+        let myNumber = 3; 
+
+        if (myNumber !=5) {
+        alert("The number is" + myNumber); 
+        }
+        else
+        {
+          alert("The first condition was not met")
+        }
+
 
   return (
     
@@ -117,6 +129,7 @@ function App() {
     {lorumParagragh("red")}
     {lorumParagragh("yellow","purple")}
     {lorumParagragh("purple")}
+    alertThe number {myNumber} is not 5;
     
     </>
   )
