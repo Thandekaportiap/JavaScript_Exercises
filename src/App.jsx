@@ -77,9 +77,29 @@ function App() {
   localStorage.setItem("Name", cat.Name);
   localStorage.setItem("David", people[0].friends[0].hobbies[1].difficulty);
 
+  let num1 = 20;
+  let num2 = 30
+
+  let sub = subtraction(num1, num2)
+
+  function subtraction(num1, num2){
+
+    return(
+      num2 - num1
+    )
+  };
+
+  function addition (num1, num2){
+    
+    return(
+      num1 + num2
+    )
+  };
+  addition(num1, num2)
 
   return (
     <> 
+      
       {fruit.map((fruit, index) => (
         <BackColour id = {fruit} key = {index}/>
       ))}
@@ -92,28 +112,12 @@ function App() {
       <p>{people[1].friends[0].hobbies[1].difficulty}</p>
       </div>
 
-      <p>{localStorage.getItem("name")}</p>
-      <p>{localStorage.getItem("Name")}</p>
-      <p>{localStorage.getItem("David")}</p>
+      <p>Second element on the fruit list: {localStorage.getItem("name")}</p>
+      <p>The name of the cat inside the object: {localStorage.getItem("Name")}</p>
+      <p style={{backgroundColor:"red"}}>{localStorage.getItem("David")}</p>
 
-
-        {/* <p value={Surname}
-            onChange={(e) => setSurname(e.target.value)}></p>
-
-         <input
-            placeholder="Surname"
-            value={name}
-            onChange={(e) => setSurname(e.target.value)}/>
-
-        <div>
-            <button onClick={handle}>Done</button>
-         </div>
-
-         {localStorage.getItem('Surname') && (
-            <div>
-               Surname: <p>{localStorage.getItem('Surname')}</p>
-            </div>
-         )} */}
+      <h1>This is a difference of two numbers: {sub}</h1>
+      <h1>This is a sum of two numbers: {addition(num1, num2)}</h1>
     </>
 
   )
