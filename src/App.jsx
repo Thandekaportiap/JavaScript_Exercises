@@ -20,7 +20,13 @@ const App = ()  => {
   let fruits = ["kiwi", "apple", "banana", "grapes", "orange"]
   fruits.push("lemon")
   fruits.push("pear")
+ 
+  localStorage.setItem("fruits", JSON.stringify(fruits))
+  const localData = localStorage.getItem("fruits");
 
+
+  console.log("this is from my localStorage "+ localData)
+  
 
   const people = [
     {
@@ -82,9 +88,10 @@ const App = ()  => {
   </div>
   <div style={{background:"orange"}}>
     <p>{people[1].friends[0].hobbies[1].difficulty}</p>
-    
   </div>
-   
+   <div>
+    <p> {localData}</p>
+   </div>
     </>
   )
 }
