@@ -88,8 +88,8 @@ function App() {
         function multiplication(numOne,NumTwo,numThree){
         return numOne* NumTwo * numThree 
         }
-        function lorumParagragh(color,color2){
-          return <div style={{background:color,color:color2}}> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget sodales metus. Suspendisse vitae sem in eros aliquet ullamcorper. Cras ante eros, maximus eu metus accumsan, faucibus tempor turpis. Mauris pellentesque nulla lorem, eu commodo mi aliquet vitae. Nullam eros quam, ultrices nec mollis id, faucibus in nisi. Nam interdum orci nibh, eget porta metus ornare eu. Integer in turpis et enim consequat dapibus. Etiam fermentum eros a mauris congue eleifend."</div>
+        function lorumParagragh(color,color2,color3){
+          return <div style={{background:color,color:color2,color3}}> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget sodales metus. Suspendisse vitae sem in eros aliquet ullamcorper. Cras ante eros, maximus eu metus accumsan, faucibus tempor turpis. Mauris pellentesque nulla lorem, eu commodo mi aliquet vitae. Nullam eros quam, ultrices nec mollis id, faucibus in nisi. Nam interdum orci nibh, eget porta metus ornare eu. Integer in turpis et enim consequat dapibus. Etiam fermentum eros a mauris congue eleifend."</div>
         }
 
   return (
@@ -116,6 +116,7 @@ function App() {
     <p>The product of three numbers is: {multiplication(16,32,3)}</p>
     {lorumParagragh("red")}
     {lorumParagragh("yellow","purple")}
+    {lorumParagragh("purple")}
     
     </>
   )
