@@ -1,5 +1,6 @@
 import React from 'react'
 import Practice from './components/practice';
+import Difficulty from './components/difficulty';
 
 function APP(){
 
@@ -119,9 +120,12 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
 
   let isAge = 20;
   
-  if(isAge != 5){
+  if(isAge == 5){
 
     alert("The value of Age is "+ isAge)
+  }
+  else{
+    alert("The condition was not meant")
   }
 
 
@@ -129,6 +133,9 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
 
   return(
     <>
+
+<Difficulty/>
+
 <h1>Hi my name is :{myNameis()}</h1>
 <h2>This is the difference between two numbers :{subtraction(num1, num2)}</h2>
 <p>This is the product of two numbers :{multiplication(num1, num2)}</p>
