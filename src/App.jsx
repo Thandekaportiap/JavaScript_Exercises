@@ -110,11 +110,20 @@ function App() {
     return numberA * numberB * numberC;
   }
 
+  function Divvie(colour){
+
+    return <div style={{backgroundColor:colour}}> Watta gwan?</div>
+  }
+
   return (<>
   <h1>This is the sum of 2 numbers: {addition(num1,num2)}</h1>
   <h2>This is the output/return of a silly function: {nameOfFunction()}</h2>
   <p>This is the subtraction of 2 numbers: {subtraction(num1,num2)}</p>
   <p>This is the product of 3 numbers: {multiplication(5,6,3)}</p>
+  {Divvie("lightgreen")}
+  {Divvie("red")}
+  {Divvie("orange")}
+
   </>);
 }
 
