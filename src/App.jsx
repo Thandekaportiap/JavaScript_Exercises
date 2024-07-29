@@ -97,6 +97,12 @@ return sum
     </p>
   }
 
+  let sunnySide = 21;
+  if(sunnySide == 5){
+    alert("The name of the variable is sunnySide and it has " + sunnySide +" inside")
+  }
+
+
   return(
     <>
 
