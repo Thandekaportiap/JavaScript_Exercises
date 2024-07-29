@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 // import { useEffect } from 'react';
 import './App.css'
 import BackColour from './components/colour'
+import Robot from './components/difficulty';
+import { ImHappy2 } from "react-icons/im";
+import { BsFillEmojiNeutralFill } from "react-icons/bs";
+import { ImAngry2 } from "react-icons/im";
 
 function App() {
   let num = 16;
@@ -126,11 +130,23 @@ function App() {
     )
   }
 
-  let number = 10;
+  // let number = 10;
 
-  if(number != !5){
-    alert ("The name of my variable is number and I assigned it = " + number)
-  }
+  // if(number == 5){
+  //   alert ("The name of my variable is number and I assigned it = " + number)
+  // }else{
+  //   alert("This condition is not met.")
+  // }
+
+  let level = "hard";
+
+    if(level == "easy"){
+      level = <div style={{backgroundColor:"green"}}><ImHappy2 size={20}/>Easy</div>
+    }else if(level == "medium"){
+      level = <div style={{backgroundColor:"orange"}}><BsFillEmojiNeutralFill size={20}/>Medium</div>
+    }else{
+      level = <div style={{backgroundColor:"red"}}><ImAngry2 size={20}/>Hard</div>
+    }
 
   return (
     <> 
@@ -158,6 +174,8 @@ function App() {
       {bgroungColour("grey", "white")}
       {bgroungColour("violet", "nayve")}
       {bgroungColour("yellow", "purple")}
+
+      <Robot robColor = {level}/>
     </>
 
   )
