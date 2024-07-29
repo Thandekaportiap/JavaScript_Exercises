@@ -70,11 +70,44 @@ function App() {
     }
   ];
 
-  console.log()
+  // set Item
+  localStorage.setItem("fear", "what is fear?")
+
+  // Retrieve
+ 
+  function subtraction(num1, num2){
+  
+    return(
+      num1 - num2
+    )
+    
+  }
+
+  let num1 = 23
+  let num2 = 19
+
+  subtraction(num1,num2);
+
+  function addition(num3, num4){
+    return(
+      num3 + num4
+    )
+  }
+
+  let num3 = 234
+  let num4 = 67
+
+  function multiply(num5, num6, num7){
+    return num5 * num6 * num7
+  }
+
+  let num5 = 12
+  let num6 = 200
+  let num7 = 2
 
   return (
     <>
-      {fruits.map((items, index) => (
+      {/* {fruits.map((items, index) => (
         <Div name={items} key={index} />
       ) )}
 
@@ -87,10 +120,18 @@ function App() {
         <h1>{people[1].friends[0].hobbies[1].difficulty}</h1>
       </div>
 
+      <h1>Saved attribute is:</h1>
+
+  
+      <h1 id=''>{localStorage.getItem("fear")}</h1> */}
       
-     
+      
+     <h1>The difference of two numbers is:{subtraction(num1, num2)}</h1>
+    <h2>The product of three numbers is:{multiply(num5, num6, num7)} </h2>
+     <p>The sum of two numbers is: {addition(num3, num4)}</p>
     </>
-  )
+  
+  );
 }
 
 export default App
