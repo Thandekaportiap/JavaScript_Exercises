@@ -1,20 +1,16 @@
-function Backgroud({name}){
-  
-  
- 
-
-    return (
-        
-    
-        <>
-       <div style={
-        {backgroundColor:"pink"}} ><h1>{name}</h1> </div>
+function Background({fruit}){
+  return(
+      <div style={{
+          backgroundColor: "pink",
+          width:"300px",
        
-      
-        </>
-      )
-    }
- 
-    
+      }}>
 
-export default Backgroud
+
+       <h1>{fruit} </h1>
+      </div>
+  )
+
+
+}
+export default Background;

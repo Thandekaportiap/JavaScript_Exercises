@@ -1,51 +1,37 @@
 import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { PiMediumLogoFill } from "react-icons/pi";
 import { GiDiamondHard } from "react-icons/gi";
-function Difficulty(){
-    let level = 5;
-    if(level =5 ){
-        return (
-<div style={{
-        backgroundColor:"green"
-    }} >
-      <PiPencilSimpleLineFill size={30} /> <h1>easy</h1> 
-</div>
-        )  
-    }
-    else{
-        return(
-            <div
-               style={{
-                backgroundColor:"red"
-               }}
-               >
-                <GiDiamondHard size={30} /> <h1>hard </h1>
-                </div>  
-        )
-    }
-// return(
-//     <>
-    
-//     <div
-//     style={{
-//       backgroundColor:"orange"  
-//     }}
-//     >
+const Difficulty = ({level}) => {
+    console.log(level)
+  let backgroundColor;
+  let icon;
+    if (level ==='easy') {
         
-//         <PiMediumLogoFill  size={30}/> <h1>medium</h1>
-    
-//     </div> 
+                    backgroundColor ='green'
+                    icon =  <PiPencilSimpleLineFill size={50} />
+         
+    }
+           else if(level ==='medium'){
+                
+                  backgroundColor = 'orange ' 
+                  icon =<PiMediumLogoFill  size={50}/>
+                    
+               
+           }
+                else{
+                  
+                        backgroundColor = 'red '
+                         icon =<GiDiamondHard size={50} /> 
+                    
+                }
+                return(
+                    <div style={{backgroundColor,padding:'10px',color:'white'}}>
+                     {level.charAt(0).toUpperCase()+ level.slice(1)}
+                     {icon}
+                    </div>
+                )
 
-//    <div
-//    style={{
-//     backgroundColor:"red"
-//    }}
-//    >
-//     <GiDiamondHard size={30} /> <h1>hard </h1>
-//     </div>   
-    
-//    </> 
-// )
+            }         
 
-}
+
 export default Difficulty;

@@ -4,70 +4,93 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import List from './components/bgcolour'
 import Difficulty from './components/difficulty'
+import Background from './components/bgcolour'
+import Forloop from './components/Forloop'
 
 
 function App() {
  
-  let number = 9;
-  number =4
+  let num = 7;
+      num = 1;
 
-  let hope = "fresh";
-
-   //let isPaid = no
-  
+  let news = "success";
    
-  
+  let isBroke = true;
 
-   let animal = {animaType:"Cat", color :"Grey and Black", age:2, eyeColor:"blue",isHungry: true, list:['Monday','Tuesday','Wednesday','Thursday','Friday']};
-   
-    let fruits = ['Banana', 'Apple', 'Pear','Orange', 'Nantchie']
+  let dog = {
+    name: "snoopy",
+    height: 2.5,
+    isMale: true,
+    puppynames: ["pookie","red", "bobbie","ted"]
 
-    fruits.push('Pineapple', 'SweetBerry')
-    
-    console.log(animal.list[2]);
-    const people = [
+  };
+
+
+  let fruits = ["orange", "strawberry", "mango", "banana", "peach"]
+   fruits.push("strawberry")
+
+  const fruit = "orange";
+
+const people = [
+
+  //ALICE//
+  {
+    id: 1,
+    name: "Alice",
+    age: 30,
+    friends: [
       {
-        id: 1,
-        name: "Alice",
-        age: 30,
-        friends: [
-          {
-            id: 2,
-            name: "Bob",
-            age: 25,
-            hobbies: [
-              { id: 1, name: "Reading", difficulty: "Medium" },
-              { id: 2, name: "Hiking", difficulty: "Hard" }
-            ]
-          },
-          {
-            id: 3,
-            name: "Charlie",
-            age: 35,
-            hobbies: [
-              { id: 3, name: "Gaming", difficulty: "Easy" },
-              { id: 4, name: "Cooking", difficulty: "Medium" }
-            ]
-          }
+        id: 2,
+        name: "Bob",
+        age: 25,
+        hobbies: [
+          { id: 1, name: "Reading", difficulty: "Medium" },
+          { id: 2, name: "Hiking", difficulty: "Hard" }
         ]
       },
+
+
+//CHARLIE//
       {
-        id: 4,
-        name: "David",
-        age: 40,
-        friends: [
-          {
-            id: 5,
-            name: "Eve",
-            age: 28,
-            hobbies: [
-              { id: 5, name: "Swimming", difficulty: "Hard" },
-              { id: 6, name: "Cycling", difficulty: "Medium" }
-            ]
-          }
+        id: 3,
+        name: "Charlie",
+        age: 35,
+        hobbies: [
+          { id: 3, name: "Gaming", difficulty: "Easy" },
+          { id: 4, name: "Cooking", difficulty: "Medium" }
         ]
       }
-    ];
+    ]
+  },
+
+//DAVID//
+  {
+    id: 4,
+    name: "David",
+    age: 40,
+    friends: [
+      {
+        id: 5,
+        name: "Eve",
+        age: 28,
+        hobbies: [
+          { id: 5, name: "Swimming", difficulty: "Hard" },
+          { id: 6, name: "Cycling", difficulty: "Medium" }
+        ]
+      }
+    ]
+  }
+];
+
+// {people[2[3[3[1[2]]]]]};
+
+console.log(people);
+console.log(people[1]);
+console.log(people[1].name);
+console.log(people[1].friends[0]);
+console.log(people[1].friends[0].hobbies[1].difficulty)
+
+
     
     let now = 7;
     if(now ==5){
@@ -104,7 +127,7 @@ function App() {
     
 function paragraph(pink, green){
   return(
-  <p   style={{backgroundColor:pink, color:green}}>
+  <p   style={{backgroundColor:pink, color:green, padding:'20px'}}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas et urna quis faucibus.
      Sed dignissim interdum justo, non pellentesque metus commodo vel. Sed condimentum purus a dui fringilla, 
      consequat facilisis nunc posuere. Curabitur sodales condimentum erat nec faucibus.
@@ -123,6 +146,26 @@ paragraph()
     
     
     <>
+
+<div style={{
+      display: "flex",
+    }}>
+      {fruits.map((fruit,index) =>(
+
+     <Background fruit={fruit} key={index}></Background>
+))} 
+</div>
+<div>
+  <p>{dog.puppynames[2]}</p>
+</div>
+
+<div style={{}}>
+<p>
+{people[1].friends[0].hobbies[1].difficulty}
+
+
+</p>
+</div>
     {/* {fruits.map((fruits,index) => (
       <List name={fruits} key={index}/>
     ))}
@@ -145,7 +188,8 @@ paragraph()
   {paragraph("pink","green")}
   {paragraph("yellow","purple")}
  
- <Difficulty/>
+ <Difficulty level='hard'/>
+ <Forloop  num ={3}/>
     </>
   )
 }
