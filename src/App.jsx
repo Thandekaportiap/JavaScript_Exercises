@@ -135,7 +135,21 @@ function App() {
     alert("The condition for the if was not met.")
   }
 
-  
+ 
+let i = 0;
+while (i < 10) {
+  console.log("This is the value of i.",i);
+  i++;
+}
+
+let a = 15
+
+do {
+  console.log("This do-while is number",a)
+  a++;
+}
+while (a < 15);  
+
 
   return (
     <>
@@ -172,7 +186,9 @@ function App() {
   <Difficulty level={"medium"}/>
   <Difficulty level={"hard"}/>
 
-  <ForLoop num={2}/>
+  <ForLoop num={0}/><br></br>
+  
+
 
     </>
   
