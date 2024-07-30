@@ -140,10 +140,17 @@ function App() {
   // while loop
     let i = 0;
     while (i < 10) {
-    console.log("This is the value of while loop " + i);
+    console.log("This is the value of While loop " + i);
     i++;
   }
 
+  // Do while loop
+  let y = 20;
+  do {
+  console.log("This is the value of Do While loop " + y);
+  y++;
+  }
+  while (y < 10);  
 
   return (
     <> 
