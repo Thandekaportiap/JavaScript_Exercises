@@ -128,13 +128,13 @@ function App() {
     )
   }
 
-  // let number = 10;
+  let number = 10;
 
-  // if(number == 5){
-  //   alert ("The name of my variable is number and I assigned it = " + number)
-  // }else{
-  //   alert("This condition is not met.")
-  // }
+  if(number == 5){
+    alert ("The name of my variable is number and I assigned it = " + number)
+  }else{
+    alert("This condition is not met.")
+  }
 
 
   return (
