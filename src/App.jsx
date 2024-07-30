@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 // import { useEffect } from 'react';
-import './App.css'
-import BackColour from './components/colour'
+import './App.css';
+import BackColour from './components/colour';
 import Robot from './components/difficulty';
+import ForLoop from './components/forLoop';
 
 
 function App() {
@@ -124,7 +125,7 @@ function App() {
 
   function bgroungColour(colour,text){
     return(
-      <p style={{backgroundColor:colour, color:text}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla urna, aliquam tristique gravida quis, suscipit a est. Praesent imperdiet lacus arcu, in rhoncus arcu pretium vel. Maecenas luctus, ex a dapibus commodo, nulla enim pellentesque urna, et ultricies ex purus ut massa. Phasellus vitae urna sit amet felis tempus mollis. Nam et porttitor enim. Cras gravida, nulla et rutrum lobortis, ligula nisi faucibus massa, sed tempus turpis erat nec mauris. Donec hendrerit, dui at dapibus interdum, urna quam iaculis diam, in semper enim elit a augue. Fusce a nulla eu augue gravida bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultrices purus a dignissim rhoncus. Nullam semper orci et orci pellentesque tincidunt. Sed quis gravida neque.</p>
+      <p style={{backgroundColor:colour, color:text, padding:20}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla urna, aliquam tristique gravida quis, suscipit a est. Praesent imperdiet lacus arcu, in rhoncus arcu pretium vel. Maecenas luctus, ex a dapibus commodo, nulla enim pellentesque urna, et ultricies ex purus ut massa. Phasellus vitae urna sit amet felis tempus mollis. Nam et porttitor enim. Cras gravida, nulla et rutrum lobortis, ligula nisi faucibus massa, sed tempus turpis erat nec mauris. Donec hendrerit, dui at dapibus interdum, urna quam iaculis diam, in semper enim elit a augue. Fusce a nulla eu augue gravida bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultrices purus a dignissim rhoncus. Nullam semper orci et orci pellentesque tincidunt. Sed quis gravida neque.</p>
     )
   }
 
@@ -166,6 +167,7 @@ function App() {
       {bgroungColour("yellow", "purple")}
 
       <Robot/>
+      <ForLoop sum = {6}/>
     </>
 
   )
