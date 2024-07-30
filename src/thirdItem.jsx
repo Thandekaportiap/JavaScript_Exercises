@@ -11,8 +11,8 @@ function Thirditem(){
       };
     return (
         <>
-         <div style={{backgroundColor:"black", borderRadius:"10px",display:"flex"}}>
-            <p style={{color:"white",width:"80px"}}>
+         <div style={{backgroundColor:"black", borderRadius:"10px",display:"flex",alignItems:"center",textAlign:"center",justifyContent:"center"}}>
+            <p style={{color:"white",width:"80px",alignItems:"center",textAlign:"center",justifyContent:"center"}}>
                Vipper also eat: {snake.foodType[2]}
             </p>
         </div>

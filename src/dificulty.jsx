@@ -7,8 +7,8 @@ function Difficulty({level}){
  
     if(level == "Easy"){
        level =  <div style={{backgroundColor:"green"}}>
-                 <GrAccessibility size={60} style={{color:"yellow"}} />
-                 <h1 style={{color:"ywllow"}}>Easy</h1>
+                 <GrAccessibility size={60} style={{color:"orange"}} />
+                 <h1 style={{color:"orange"}}>Easy</h1>
                 </div>
     }
     else if( level == "Medium"){

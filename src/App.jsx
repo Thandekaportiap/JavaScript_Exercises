@@ -68,8 +68,8 @@ function multiplication(num1, num2){
 }
 multiplication(num1, num2)
 
-function Para(color,text,topp){
-      return <div style={{backgroundColor:color,color:text,marginTop:topp}}> 
+function Para(color,text,topp,space){
+      return <div style={{backgroundColor:color,color:text,marginTop:topp,padding:space}}> 
         <p>
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit. 
@@ -129,12 +129,13 @@ function Para(color,text,topp){
             </div>
 
         {/* reusing a div on a func n changing it background */}
-        {Para("grey","white","-20px")}
-        {Para("orange","black","-20px")}
-        {Para("yellow","purple","-20px")}
+        {Para("grey","white","-20px","20px")}
+        {Para("orange","black","-20px","20px")}
+        {Para("yellow","purple","-20px","20px")}
 
         {/* changing divs when changing the levels */}
-        <Difficulty level="Hard"/>
+        <Difficulty level="Easy"/>
+
         <ForLoop num={6}/>
 
    </div>

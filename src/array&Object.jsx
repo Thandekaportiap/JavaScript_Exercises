@@ -46,8 +46,10 @@ function ArraysnObjects(){
       ];
         return (
             <>
-                <div style={{backgroundColor:"orange",color:"blue", borderRadius:"10px"}}>
-                     {people[1].friends[0].hobbies[1].difficulty}
+                <div style={{backgroundColor:"yellow",color:"black", borderRadius:"10px",
+                    alignItems:"center",textAlign:"center",justifyContent:"center"
+                }}>
+                     Eve second hobbie is : {people[1].friends[0].hobbies[1].difficulty}
                  </div>
             </>
         )
