@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Background from './components/bgcolor';
+import Difficulty from './components/difficulty';
 
 
 function App() {
@@ -91,8 +92,11 @@ if(number!=5){
 alert("The variable number has the value:" + " " + number)
 
 }
+else{
+  alert("If is not equal to 6")
+}
 ;
-
+let level = "easy"
 let num1 = 70;
 let num2 = 30;
 
@@ -154,11 +158,15 @@ function Paragraph(red, green){
 </p>
 </div> */}
 
+
 <h1>This is the diffrence of 2 numbers: {Subtraction(num1,num2)}</h1>
 <p>This is the sum of 2 numbers: {Addition(num1,num2)}</p>
 <p>This is the product of 3 numbers: { multiplication(6,6,4)}</p>
 {Paragraph("pink", "white")}
 {Paragraph("yellow", "purple")}
+
+
+<Difficulty level={level}></Difficulty>
     </>
 
   )
