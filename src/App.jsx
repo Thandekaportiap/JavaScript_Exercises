@@ -10,12 +10,12 @@ import Forloop from './components/Forloop'
 
 function App() {
  
-let i= 10;
+let i= 0;
 let text =""
   while (i < 10) {
     text += "The number is " + i;
     i++;
-    
+    console.log(i)
   }
 
   do {
