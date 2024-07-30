@@ -3,9 +3,7 @@ import React, {useState} from 'react';
 import './App.css'
 import BackColour from './components/colour'
 import Robot from './components/difficulty';
-import { ImHappy2 } from "react-icons/im";
-import { BsFillEmojiNeutralFill } from "react-icons/bs";
-import { ImAngry2 } from "react-icons/im";
+
 
 function App() {
   let num = 16;
@@ -29,9 +27,9 @@ function App() {
   }
 
   // Arrays
-  let fruit = ["Orange", "PineApple", "Banana", "Pear", "Apple"];
-  fruit.push("mango");
-  fruit.push("strawberry");
+  let fruit = ["Orange", "Kiwi", "Banana", "Pear", "Apple"];
+  fruit.push("Mango");
+  fruit.push("Strawberry");
 
   const people = [
     {
@@ -106,7 +104,7 @@ function App() {
 
 
   // Multiplication
-  function multiplication (num1, num2){
+  function multiplication (){
     num1 = 10;
     num2 = 2; 
 
@@ -138,23 +136,15 @@ function App() {
   //   alert("This condition is not met.")
   // }
 
-  let level = "hard";
-
-    if(level == "easy"){
-      level = <div style={{backgroundColor:"green"}}><ImHappy2 size={20}/>Easy</div>
-    }else if(level == "medium"){
-      level = <div style={{backgroundColor:"orange"}}><BsFillEmojiNeutralFill size={20}/>Medium</div>
-    }else{
-      level = <div style={{backgroundColor:"red"}}><ImAngry2 size={20}/>Hard</div>
-    }
 
   return (
     <> 
-      
+      <div style={{display:"flex",justifyContent:"space-between"}}>
       {fruit.map((fruit, index) => (
         <BackColour id = {fruit} key = {index}/>
       ))}
-  
+      </div>
+
       <div>
         <p>{cat.favouriteFood[2]}</p>
       </div>
@@ -165,7 +155,7 @@ function App() {
 
       <p>Second element on the fruit list: {localStorage.getItem("name")}</p>
       <p>The name of the cat inside the object: {localStorage.getItem("Name")}</p>
-      <p style={{backgroundColor:"red"}}>{localStorage.getItem("David")}</p>
+      <p style={{backgroundColor:"red",color:"white"}}>{localStorage.getItem("David")}</p>
 
       <h1>This is a difference of two numbers: {sub}</h1>
       <h1>This is a sum of two numbers: {addition(num1, num2)}</h1>
@@ -175,7 +165,7 @@ function App() {
       {bgroungColour("violet", "nayve")}
       {bgroungColour("yellow", "purple")}
 
-      <Robot robColor = {level}/>
+      <Robot/>
     </>
 
   )
