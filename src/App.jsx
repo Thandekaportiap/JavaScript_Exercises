@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Background from './components/bgcolor';
 import Difficulty from './components/difficulty';
+import ForLoop from './components/forLoop';
 
 
 function App() {
@@ -86,17 +87,17 @@ console.log(people[1].friends[0].hobbies[1].difficulty)
 ;
 
 
-let number = 6
-if(number!=5){
+// let number = 6
+// if(number!=5){
 
-alert("The variable number has the value:" + " " + number)
+// alert("The variable number has the value:" + " " + number)
 
-}
-else{
-  alert("If is not equal to 6")
-}
+// }
+// else{
+//   alert("If is not equal to 6")
+// }
 ;
-let level = "easy"
+let level =""
 let num1 = 70;
 let num2 = 30;
 
@@ -138,7 +139,7 @@ function Paragraph(red, green){
 ;
   return (
     <>
-    {/* <div style={{
+    <div style={{
       display: "flex",
     }}>
       {fruits.map((fruit,index) =>(
@@ -156,7 +157,7 @@ function Paragraph(red, green){
 
 
 </p>
-</div> */}
+</div>
 
 
 <h1>This is the diffrence of 2 numbers: {Subtraction(num1,num2)}</h1>
@@ -164,9 +165,13 @@ function Paragraph(red, green){
 <p>This is the product of 3 numbers: { multiplication(6,6,4)}</p>
 {Paragraph("pink", "white")}
 {Paragraph("yellow", "purple")}
+{/* { Difficulty(level)} */}
 
+{/* <Difficulty level= "easy"></Difficulty>
+<Difficulty level="medium"></Difficulty> */}
+<Difficulty level="medium"></Difficulty>
 
-<Difficulty level={level}></Difficulty>
+<ForLoop num={9} ></ForLoop>
     </>
 
   )
