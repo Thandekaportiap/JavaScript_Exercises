@@ -53,11 +53,10 @@ function App() {
                let num2= 10;
                   // let sum = num2- num1;
 
-
+// parameters and arguements
 function addition(num1, num2){
   return(num1 + num2)
 }
-
 addition(num1, num2)
 function subtraction(){
   return(num2-num1)
@@ -85,33 +84,10 @@ function Para(color,text,topp){
      
 }
 
-// let Six = 6;
-// if (Six == 5){
-//   alert("The name of the variable is Six and it is Assigned to nu. "+ Six)
-// }else{
-//   alert("an If statement condition was false" )
-// }
+
+// let level = ["Easy","Medium","Hard"];
 
 
-let level = ["Easy","Medium","Hard"];
-
-
-// if(easy){
-//   <div style={{backgroundColor:"green"}}>
-//         <GrAccessibility size={40} style={{color:"red"}} />
-//         <h1 style={{color:"red"}}>{level[0]}</h1>
-//         </div>
-// }else if(medium){
-//   <div style={{backgroundColor:"orange"}}>
-//   <FaAccessibleIcon size={40} />
-//   <h1>{level[1]}</h1>
-//   </div>
-// }else{
-//   <div style={{backgroundColor:"red"}}>
-//   <FaAmbulance size={40} style={{color:"green"}} />
-//    <h1 style={{color:"green"}}>{level[2]}!!!</h1>
-//   </div>
-// }
   return (
     <>
    <div>
@@ -144,16 +120,19 @@ let level = ["Easy","Medium","Hard"];
           <LocalStrge  />
 
           {/* <Minus/> */}
-          
+          {/* parameters and arguements */}
             <div style={{justifyContent:"center",alignItems:"center",textAlign:"center",marginTop:"-30px"}}>
               <h1>This is  addition : {addition(num1, num2)}</h1>
               <h2 style={{marginTop:"-30px",marginBottom:"-20px"}}> This is the subtraction: {subtraction(num1, num2)}</h2>
               <h3> This is the product of 3 numbers : {multiplication(num1, num2,2)}</h3>
             </div>
+
+        {/* reusing a div on a func n changing it background */}
         {Para("grey","white","-20px")}
         {Para("orange","black","-20px")}
         {Para("yellow","purple","-20px")}
 
+        {/* changing divs when changing the levels */}
         <Difficulty level="Hard"/>
 
    </div>
