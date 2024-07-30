@@ -4,10 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Div from './componenets/div'
 import Div2 from './componenets/div2'
-import { PiWarningDiamondBold } from "react-icons/pi";
-import { PiWarningDiamondDuotone } from "react-icons/pi";
-import { PiWarningDiamondFill } from "react-icons/pi";
+import { FaRegCheckSquare } from "react-icons/fa";
+import { IoWarningOutline } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
 import Difficulty from './componenets/difficulty'
+import ForLoop from './componenets/forloop'
 
 function App() {
   let example = 9
@@ -110,7 +111,7 @@ function App() {
   let num7 = 2
 
   function paragraph(yellow, purple){
-    return<p style={{backgroundColor:yellow, color:purple}}>As of my last update in July 2024, Heihachi Mishima’s status in the Tekken series is complex and can vary depending on the game's storyline and updates.
+    return<p style={{backgroundColor:yellow, color:purple, padding:"2cm"}}>As of my last update in July 2024, Heihachi Mishima’s status in the Tekken series is complex and can vary depending on the game's storyline and updates.
 
     Heihachi Mishima, a central character in the Tekken series, is known for his intense rivalry with his son, Kazuya Mishima, and his role in the overarching Mishima family saga. His fate has been a subject of significant plot twists throughout the series. In "Tekken 7," Heihachi is depicted as being killed by Kazuya during the climax of the game. The dramatic end scene involves Kazuya throwing Heihachi into a pit of lava, signifying his apparent death.
     
@@ -134,23 +135,16 @@ function App() {
     alert("The condition for the if was not met.")
   }
 
-  function easy(){
-    <div style={{backgroundColor:lime}}></div>
-  }
-
-  function medium(){
-    <div style={{backgroundColor:orange}}></div>
-  }
-
-  function hard(){
-    <div style={{backgroundColor:red}}></div>
-  }
+  
 
   return (
     <>
-      {/* {fruits.map((items, index) => (
-        <Div name={items} key={index} />
+    <div style={{display:"flex"}}>
+      {fruits.map((items, index) => (
+        <Div name={items} key={index}/>
       ) )}
+    </div>
+      
 
       <div>
         <p>{honeyBadger.fear[2]}</p>
@@ -164,7 +158,7 @@ function App() {
       <h1>Saved attribute is:</h1>
 
   
-      <h1 id=''>{localStorage.getItem("fear")}</h1> */}
+      <h1 id=''>{localStorage.getItem("fear")}</h1>
       
       
      <h1>The difference of two numbers is:{subtraction(num1, num2)}</h1>
@@ -174,7 +168,11 @@ function App() {
      {paragraph("grey", "blue")}
 
 
-    <Difficulty>{easy}</Difficulty>
+  <Difficulty level={"easy"}/>
+  <Difficulty level={"medium"}/>
+  <Difficulty level={"hard"}/>
+
+  <ForLoop num={2}/>
 
     </>
   
