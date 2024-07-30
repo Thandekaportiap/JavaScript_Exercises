@@ -136,7 +136,7 @@ if(whichIcon==2)
   {Divvie("orange","white")}
   <BiAccessibility size={60} />
   <BiBasket size={60}/>
-  <ForLoop num={6}/>
+  <ForLoop num={3}/>
   </>);
 }
 
