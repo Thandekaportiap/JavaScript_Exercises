@@ -10,6 +10,23 @@ import Forloop from './components/Forloop'
 
 function App() {
  
+let i= 10;
+let text =""
+  while (i < 10) {
+    text += "The number is " + i;
+    i++;
+    
+  }
+
+  do {
+    text += "<br>The number is " + i;
+    i++;
+    console.log(i)
+  }
+  while (i < 10);  
+  
+  
+
   let num = 7;
       num = 1;
 
