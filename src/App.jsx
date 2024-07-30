@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { BiAccessibility } from "react-icons/bi";
 import { BiBasket } from "react-icons/bi";
+import ForLoop from "./components/forLoop";
 
 function App() {
   // Create an Object
@@ -135,6 +136,7 @@ if(whichIcon==2)
   {Divvie("orange","white")}
   <BiAccessibility size={60} />
   <BiBasket size={60}/>
+  <ForLoop num={6}/>
   </>);
 }
 
