@@ -10,6 +10,7 @@ import Easy from './dificulty';
 import Medium from './medium';
 import Hard from './hard';
 import Difficulty from './dificulty';
+import ForLoop from './componets/forLoop';
 
 
 
@@ -134,6 +135,7 @@ function Para(color,text,topp){
 
         {/* changing divs when changing the levels */}
         <Difficulty level="Hard"/>
+        <ForLoop num={6}/>
 
    </div>
     </>
