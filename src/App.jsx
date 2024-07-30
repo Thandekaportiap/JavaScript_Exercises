@@ -2,6 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { BiAccessibility } from "react-icons/bi";
+import { BiBasket } from "react-icons/bi";
 
 function App() {
   // Create an Object
@@ -110,10 +112,18 @@ function App() {
     return numberA * numberB * numberC;
   }
 
-  function Divvie(colour){
+  function Divvie(colour,textColour){
 
-    return <div style={{backgroundColor:colour}}> Watta gwan?</div>
+    return <div style={{backgroundColor:colour,color:textColour}}> Watta gwan?</div>
   }
+
+let whichIcon = 3;
+
+if(whichIcon==2)
+{
+  //Then the code to be executed if the condition is true
+  alert("Hey hey hey")
+}
 
   return (<>
   <h1>This is the sum of 2 numbers: {addition(num1,num2)}</h1>
@@ -122,8 +132,9 @@ function App() {
   <p>This is the product of 3 numbers: {multiplication(5,6,3)}</p>
   {Divvie("lightgreen")}
   {Divvie("red")}
-  {Divvie("orange")}
-
+  {Divvie("orange","white")}
+  <BiAccessibility size={60} />
+  <BiBasket size={60}/>
   </>);
 }
 
