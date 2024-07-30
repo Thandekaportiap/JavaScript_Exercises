@@ -1,6 +1,7 @@
 import React from "react";
 import NewComp from "./component/newComp"
 import Difficulty from "./component/difficulty"
+import ForLoop from "./component/forLoop";
 
 const App = ()  => {
 
@@ -89,7 +90,7 @@ return sum
   }
 
   const text = (color, color1) => {
-    return <p style={{backgroundColor: color, color:color1}}>
+    return <p style={{backgroundColor: color, color:color1, padding:"2%"}}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
        Morbi ullamcorper semper tellus, nec suscipit mi imperdiet at. 
        Morbi sollicitudin orci quis cursus accumsan. Nam at urna mi. 
@@ -136,6 +137,7 @@ return sum
     <div>{text("yellow", "purple")}</div>
    </div>
    <div>< Difficulty  level={level}/></div>
+   <ForLoop age={6} />
     </>
   )
 }
