@@ -106,8 +106,8 @@ return sum
   //   alert("the condition for the if statement was not met")
   // }
 
-  // let level = ["easy", "medium", "hard"]
-  let level = "easy";
+  
+  let level = "hard";
 
   return(
     <>
