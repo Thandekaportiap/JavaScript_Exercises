@@ -137,6 +137,13 @@ function App() {
     alert("This condition is not met.")
   }
 
+  // while loop
+    let i = 0;
+    while (i < 10) {
+    console.log("This is the value of while loop " + i);
+    i++;
+  }
+
 
   return (
     <> 

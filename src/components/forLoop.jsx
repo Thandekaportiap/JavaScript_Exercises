@@ -13,6 +13,10 @@ function ForLoop({sum}){
         Genre: "fiction",  
     }
 
+    for(let p in book){
+        console.log("This is the For in Loop with the book propety " + book[p])
+    }
+
     for(let i = 0; i < sum; i++){
         word += "This is the prop value of Component For Loop " + i + " ";
         console.log("This is the prop value of Component For Loop " + i)
