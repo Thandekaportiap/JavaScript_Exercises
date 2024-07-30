@@ -68,8 +68,8 @@ function multiplication(num1, num2){
 }
 multiplication(num1, num2)
 
-function Para(color,text){
-      return <div style={{backgroundColor:color,color:text}}> 
+function Para(color,text,topp){
+      return <div style={{backgroundColor:color,color:text,marginTop:topp}}> 
         <p>
           Lorem ipsum dolor sit amet, 
           consectetur adipiscing elit. 
@@ -85,15 +85,15 @@ function Para(color,text){
      
 }
 
-let Six = 6;
-if (Six == 5){
-  alert("The name of the variable is Six and it is Assigned to nu. "+ Six)
-}else{
-  alert("an If statement condition was false" )
-}
+// let Six = 6;
+// if (Six == 5){
+//   alert("The name of the variable is Six and it is Assigned to nu. "+ Six)
+// }else{
+//   alert("an If statement condition was false" )
+// }
 
 
-
+let level = ["Easy","Medium","Hard"];
 
 
 // if(easy){
@@ -114,47 +114,49 @@ if (Six == 5){
 // }
   return (
     <>
-   
-        
-       
-        {/* string data type */}
-        <h1 >{gee} <br /></h1>
+   <div>
+                  {/* string data type */}
+                <h1 >{gee} <br /></h1>
 
         {/*removing last item on the fruitNames List */}
         {/* {fruitNames.pop()} */}
 
           {/* mapping through the list of fruits */}
-          {fruitNames.map((fruit, index) => (
-           <Div fruits={fruit} key={index}/>))
+        <div style={{ display: 'flex', flexDirection: 'row',justifyContent:"space-between",marginTop:"-35px",height:"10%" }}>
+        {fruitNames.map((fruit, index) => (
+          <Div fruits={fruit} key={index}/>))
           }
+        </div>
 
           {/* Accessing the 3rd item on the list of my animal foodtype */}
           <Thirditem/>
 
-         {/* <Div fruits={fruitNames}/> */}
+        {/* <Div fruits={fruitNames}/> */}
 
         {/* <div>
         <David friends={people}/>
         </div> */}
 
         {/* Accessing David friends second hobbie */}
-         <ArraysnObjects/>
+        <ArraysnObjects/>
 
           {/*pulling the object from the local storage and display it on the p-tag */}
           <LocalStrge  />
 
           {/* <Minus/> */}
-           
-            <h1>This is  addition : {addition(num1, num2)}</h1>
-            <h2> This is the subtraction: {subtraction(num1, num2)}</h2>
-            <h3> This is the product of 3 numbers : {multiplication(num1, num2,2)}</h3>
-            
-        {Para("grey","white")}
-        {Para("orange","black")}
-        {Para("yellow","purple")}
+          
+            <div style={{justifyContent:"center",alignItems:"center",textAlign:"center",marginTop:"-30px"}}>
+              <h1>This is  addition : {addition(num1, num2)}</h1>
+              <h2 style={{marginTop:"-30px",marginBottom:"-20px"}}> This is the subtraction: {subtraction(num1, num2)}</h2>
+              <h3> This is the product of 3 numbers : {multiplication(num1, num2,2)}</h3>
+            </div>
+        {Para("grey","white","-20px")}
+        {Para("orange","black","-20px")}
+        {Para("yellow","purple","-20px")}
 
-        <Difficulty level={level}/>
-      
+        <Difficulty level="Hard"/>
+
+   </div>
     </>
   )
 }

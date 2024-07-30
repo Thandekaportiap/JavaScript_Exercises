@@ -4,40 +4,36 @@ import { FaAmbulance } from "react-icons/fa";
 
 
 function Difficulty({level}){
-    let level = ["Easy","Medium","Hard"];
-let easy =  <div style={{backgroundColor:"green"}}>
-            <GrAccessibility size={40} style={{color:"red"}} />
-            <h1 style={{color:"red"}}>{level[0]}</h1>
-            </div>
-
-let medium = <div style={{backgroundColor:"orange"}}>
-                <FaAccessibleIcon size={40} />
-                <h1>{level[1]}</h1>
+ 
+    if(level == "Easy"){
+       level =  <div style={{backgroundColor:"green"}}>
+                 <GrAccessibility size={60} style={{color:"yellow"}} />
+                 <h1 style={{color:"ywllow"}}>Easy</h1>
                 </div>
-
-let hard =   <div style={{backgroundColor:"red"}}>
-            <FaAmbulance size={40} style={{color:"green"}} />
-            <h1 style={{color:"green"}}>{level[2]}!!!</h1>
-            </div>
-
-            
-    if(level[0]){
-            
     }
-    else if(level[1]){
-
+    else if( level == "Medium"){
+        level = <div style={{backgroundColor:"orange"}}>
+                <FaAccessibleIcon size={60} />
+                <h1>Medium</h1>
+                </div>
     }
-    else if(level[2]){
-
+    else if(level == "Hard"){
+            
+        level =  <div style={{backgroundColor:"red"}}>
+                <FaAmbulance size={60} style={{color:"black"}} />
+                <h1 style={{color:"black"}}>Hard!!!</h1>
+                </div>
     }
     return(
         <>
-       
-       
-
-        
-
-       
+        <div style={{justifyContent:"center",
+                     alignItems:"center", 
+                     textAlign:"center",
+                     marginTop:"-20px",
+                     height:"30px"}}>
+                     {level}
+        </div>
         </>
     )
-}export default Difficulty;
+}
+export default Difficulty;
